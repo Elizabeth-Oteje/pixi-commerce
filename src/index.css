@@ -23,7 +23,7 @@ font-family: 'Poppins';
 }
 
 h1 {
-  font-size: 48px ;
+  font-size: 48px !important ;
   font-family: 'Inter' !important;
   font-weight: 800;
 
@@ -32,13 +32,13 @@ h1 {
 
 
 h2 {
-  font-size: 36px;
+  font-size: 36px !important;
   font-family: 'Inter' !important;
-  font-weight: 780; 
+  font-weight: 700; 
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 24px !important;
   font-family: 'Inter' !important;
   font-weight: 800 !important;
 
@@ -47,7 +47,7 @@ h3 {
 
 
 h4 {
-  font-size: 20px;
+  font-size: 20px !important;
   font-family: 'Poppins' !important;
   font-weight: 600;
 }
@@ -55,14 +55,14 @@ h4 {
 
 
 h5 {
-  font-size: 17px;
+  font-size: 17px !important;
   font-family: 'Poppins' !important;
   font-weight: 500;
 }
 
 
 h6 {
-  font-size: 16px;
+  font-size: 16px !important;
   font-family: 'Poppins' !important;
   font-weight: 500;
   
@@ -70,7 +70,7 @@ h6 {
 
 
 p {
-  font-size: 14px;
+  font-size: 14px !important;
   font-family: 'Poppins' !important;
   font-weight: 500;
 }
@@ -90,31 +90,79 @@ input::placeholder {
 
 }
 
+.custom-carousel .carousel-indicators .active {
+  background-color: #EC2C5C !important; 
+}
+.custom-carousel .carousel-control-prev ,
+.custom-carousel .carousel-control-next {
+  display: none;
+}
 
+.image-glow {
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+.active-jobs-button{
+  background-color: #DB4444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.jobs-button{
+  background-color: white;
+  color:#000000;
+  border: 1px solid #dfdcdc !important;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  
+
+}
+
+
+.timer{
+  width: 62px;
+  height: 62px;
+}
 @media (max-width: 768px) {
   h1 {
-    font-size: 28px;;
+    font-size: 28px !important;
   }
   h2 {
-    font-size: 24px;;
+    font-size: 24px !important;
     
   }
   h3 {
-    font-size: 21px;;
+    font-size: 21px !important;
    
   }
   h4 {
-    font-size: 18px;;
+    font-size: 18px !important;
   }
   h5 {
-    font-size: 16px;;
+    font-size: 16px !important;
   }
   h6 {
-    font-size: 14px;;
+    font-size: 14px !important;
   }
   p {
-    font-size: 12px;;
+    font-size: 12px !important;
   }
-  
+  .timer{
+    width: 50px;
+    height: 50px;
+  }
   
 }

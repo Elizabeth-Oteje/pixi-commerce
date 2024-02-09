@@ -7,13 +7,13 @@ import { Link, NavLink } from 'react-router-dom'
 const GuestNavbar = () => {
   return (
     <div>
-     <Navbar bg='dark' style={{color:'#fff', height:'48px'}} className='px-3 px-md-5 mb-3 d-flex justify-content-between align-items-center' >
-        <div className='d-none d-md-flex'></div>
+     <Navbar bg='dark' style={{color:'#fff', height:'48px'}} className='px-3 px-lg-5 mb-3 d-flex justify-content-between align-items-center' >
+        <div className='d-none d-lg-flex'></div>
         
             <p style={{marginTop:'10px'}}>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! &nbsp; <a href='#' style={{fontWeight:'600', color:'#fff'}}>Shop Now</a></p>
 
             
-            <NavDropdown title="English" id="basic-nav-dropdown" className='me-md-5 me-2 pe-5' style={{fontSize:'14px'}}>
+            <NavDropdown title="English" id="basic-nav-dropdown" className='me-md-5 me-2 pe-lg-5' style={{fontSize:'14px'}}>
               <NavDropdown.Item href="#action/3.1">French</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Spanish
@@ -26,23 +26,23 @@ const GuestNavbar = () => {
       
         
      </Navbar>
-     <Navbar expand="lg" variant="light" bg="white" className='py-4 px-3 px-md-5 ' style={{borderBottom:'1px solid #dfdcdc'}}>
-   <Container>
-      <Navbar.Brand className=''>
+     <Navbar expand="lg" variant="light" bg="white" className='py-4 px-3 px-lg-5 ' style={{borderBottom:'1px solid #dfdcdc'}}>
+ 
+      <Navbar.Brand className='ms-3 ms-xl-5'>
         <Link to='/'  style={{textDecoration:'none', fontWeight:'800'}}>
         <h3 className='text-dark' >Exclusive</h3>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarSupportedContent" />
       <Navbar.Collapse id="navbarSupportedContent" >
-        <Nav className="mx-auto gap-4">
+        <Nav className="mx-auto gap-4 gap-md-3">
         <NavLink activeclassname='active' className='nav-link' to="/">Home</NavLink>
         <Nav.Link className='nav-link' >Contact</Nav.Link>
         <Nav.Link className='nav-link' >About</Nav.Link>
         <Nav.Link className='nav-link' >Signup</Nav.Link>
           
         </Nav>
-        <Nav className='gap-4 align-items-center'>
+        <Nav className='gap-4 align-items-center me-3 me-xl-5'>
             <div className='px-2 d-flex align-items-center' style={{backgroundColor: '#F5F5F5'}}>
                 <Form.Control style={{border:'none', backgroundColor: '#F5F5F5'}} placeholder='What are you looking for'/>
                 <i className="bi bi-search"></i>
@@ -52,7 +52,7 @@ const GuestNavbar = () => {
          
         </Nav>
       </Navbar.Collapse>
-      </Container>
+     
     
   </Navbar>
     </div>
