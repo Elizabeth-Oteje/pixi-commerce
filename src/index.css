@@ -153,6 +153,44 @@ input::placeholder {
 
 }
 
+.itinerary-text{
+ 
+  color: #B3BCCD;
+  
+
+}
+
+.active-itinerary{
+ 
+  color: #DD4B39;
+}
+
+.form-group {
+  position: relative;
+  display: inline-block;
+}
+
+.form-group .required-indicator {
+  position: absolute;
+  
+  color: #DD4B39;
+  font-size: 12px;
+}
+
+.btn{
+  font-size: 16px !important;
+}
+
+
+
+/* Custom indicator */
+
+
+/* Custom indicator for checked state */
+.custom-radio .form-check-input:checked, .form-switch .form-check-input:checked  {
+  background-color: #DD4B39 !important;
+  border-color: #DD4B39 !important;
+}
 
 .timer{
   width: 62px;
@@ -187,5 +225,11 @@ input::placeholder {
     height: 50px;
   
   }
+  .btn{
+    font-size: 14px !important;
+  }
   
+  .btn-danger,.danger{
+    color: #DD4B39;
+  }
 }

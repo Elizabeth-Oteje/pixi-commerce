@@ -28,7 +28,7 @@ import AddToCartModal from '../components/AddToCartModal';
     return windowWidth;
   }
 
-  const OptionsYouMightLike = () => {
+  export const OptionsYouMightLike = () => {
     const navigate = useNavigate();
     const [showModal, setShowModal] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
@@ -66,13 +66,13 @@ const handleShowModal = (product) => {
   
     return (
       <div>
-        <h2 className="my-4">We think you might like there</h2>
+        <h3 className="my-4">We think you might like there</h3>
         {isMobile ? (
           <Carousel className='product-carousel px-4' variant='dark'>
             {shuffledProducts.map((product) => (
               <Carousel.Item key={product.id} className='mb-5'>
                 
-                            <Card className='border-0 product-card' onClick={() => handleShowModal(product)} >
+                            <Card className='border-0 product-card' onClick={() => handleShowModal(product)} style={{backgroundColor:'none'}} >
              
                             <Card className='d-flex align-items-center text-center justify-content-center p-4 position-relative' style={{backgroundColor:'#F5F5F5', border:'none'}}>
                                             <Image fluid src={product.productImage}  className='' style={{height:'180px'}}/>
@@ -85,7 +85,7 @@ const handleShowModal = (product) => {
                                             </div>)}
                                             
                             </Card>
-              <div className=' pt-2'>
+              <div className=' pt-2' style={{backgroundColor:'none'}}>
                 <Card.Text>{product.productName}</Card.Text>
                 {product.oldPrice && (
                     <div>
@@ -134,7 +134,7 @@ const handleShowModal = (product) => {
           <Row>
             {shuffledProducts.map((product) => (
                 <Col xs={6} lg={3} key={product.id} className='mb-5'>
-                <Card className='border-0 product-card' onClick={() => handleShowModal(product)}>
+                <Card className='border-0 product-card' onClick={() => handleShowModal(product)} style={{backgroundColor:'none'}}>
  
                 <Card className='d-flex align-items-center text-center justify-content-center p-4 position-relative' style={{backgroundColor:'#F5F5F5', border:'none'}}>
                                 <Image fluid src={product.productImage}  className='' style={{height:'180px'}}/>
@@ -147,7 +147,7 @@ const handleShowModal = (product) => {
                                 </div>)}
                                 
                 </Card>
-  <div className=' pt-2'>
+  <div className=' pt-2' style={{backgroundColor:'none'}}>
     <Card.Text>{product.productName}</Card.Text>
     {product.oldPrice && (
         <div>

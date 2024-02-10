@@ -1,8 +1,13 @@
 import React from 'react'
 import { Container, Navbar } from 'react-bootstrap'
 import pixi from '../../assets/pixi-logo.svg'
+import { useNavigate } from 'react-router-dom'
 
 const UserNavbar = () => {
+  const navigate = useNavigate()
+  const navigateToCart = ()=> {
+navigate('/cart')
+  }
   return (
     <div>
        <Navbar expand="lg" variant="light" bg="white" className='py-4 px-2 px-lg-5 justify-content-between align-items-center ' style={{borderBottom:'1px solid #dfdcdc'}}>
@@ -21,11 +26,12 @@ const UserNavbar = () => {
 
 
 </Navbar>
-<Navbar expand="lg" variant="light" bg="white" className='py-4 px-2 px-lg-5 justify-content-between align-items-center ' style={{borderBottom:'1px solid #dfdcdc'}}>
+<Navbar expand="lg" variant="light" bg="white" className='px-2 px-lg-5 justify-content-between align-items-center ' style={{borderBottom:'2px solid #FAFCFE', height:'50px'}}>
  <Container>
- <Navbar.Brand className='ms-0 ms-md-3 ms-xl-5'>
- <i class="bi bi-chevron-left"></i>
- <p>Back to cart</p>
+ <Navbar.Brand className='ms-0 ms-md-3 ms-xl-5 d-flex gap-2 align-items-center' style={{cursor:'pointer'}} onClick={navigateToCart}>
+  
+ <i className="bi bi-chevron-left"></i>
+ <p className='my-auto'>Back to cart</p>
  </Navbar.Brand>
  
  </Container>
