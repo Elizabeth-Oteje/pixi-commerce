@@ -97,8 +97,11 @@ input::placeholder {
 
 }
 
+
+
 .product-card .card {
   transition: transform 0.2s, box-shadow 0.2s;
+
 }
 .product-card .card:hover {
   transform: scale(1.02) !important;
@@ -165,18 +168,20 @@ input::placeholder {
   color: #DD4B39;
 }
 
-.form-group {
+.input-wrapper {
   position: relative;
   display: inline-block;
 }
 
-.form-group .required-indicator {
+.input-wrapper::after {
+  content: '*';
   position: absolute;
-  
-  color: #DD4B39;
-  font-size: 12px;
+  left: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+  color:  #DD4B39 ;
+  pointer-events: none;
 }
-
 .btn{
   font-size: 16px !important;
 }

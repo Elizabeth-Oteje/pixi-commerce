@@ -65,8 +65,8 @@ const handleShowModal = (product) => {
     const [shuffledProducts] = useState(() => shuffleArray([...products]).slice(0, 4));
   
     return (
-      <div>
-        <h3 className="my-4">We think you might like there</h3>
+      <div style={{backgroundColor:'#fcfcfc'}} className=''>
+        <h4 className="my-4">We think you might like there</h4>
         {isMobile ? (
           <Carousel className='product-carousel px-4' variant='dark'>
             {shuffledProducts.map((product) => (
@@ -85,7 +85,7 @@ const handleShowModal = (product) => {
                                             </div>)}
                                             
                             </Card>
-              <div className=' pt-2' style={{backgroundColor:'none'}}>
+              <div className=' pt-2' style={{backgroundColor:'#fcfcfc'}}>
                 <Card.Text>{product.productName}</Card.Text>
                 {product.oldPrice && (
                     <div>
@@ -134,7 +134,7 @@ const handleShowModal = (product) => {
           <Row>
             {shuffledProducts.map((product) => (
                 <Col xs={6} lg={3} key={product.id} className='mb-5'>
-                <Card className='border-0 product-card' onClick={() => handleShowModal(product)} style={{backgroundColor:'none'}}>
+                <Card className='border-0 product-card' onClick={() => handleShowModal(product)}>
  
                 <Card className='d-flex align-items-center text-center justify-content-center p-4 position-relative' style={{backgroundColor:'#F5F5F5', border:'none'}}>
                                 <Image fluid src={product.productImage}  className='' style={{height:'180px'}}/>
@@ -147,7 +147,7 @@ const handleShowModal = (product) => {
                                 </div>)}
                                 
                 </Card>
-  <div className=' pt-2' style={{backgroundColor:'none'}}>
+  <div className=' pt-2' style={{backgroundColor:'#fcfcfc'}}>
     <Card.Text>{product.productName}</Card.Text>
     {product.oldPrice && (
         <div>
@@ -302,12 +302,13 @@ const Cart = () => {
        )}
 
        </section>
-       <section>
-            <OptionsYouMightLike/>
-       </section>
+       
       
      
         </div>
+        <section className='mt-5 pt-3 py-5 px-3 px-md-5' style={{backgroundColor:'#fcfcfc'}}>
+            <OptionsYouMightLike/>
+       </section>
         <Footer/>
     </div>
   );

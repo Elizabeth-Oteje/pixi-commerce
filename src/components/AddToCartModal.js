@@ -19,7 +19,7 @@ const AddToCartModal = ({showModal, handleCloseModal, selectedProduct, handleDec
     </div>
   </Modal.Body>
   <Modal.Footer>
-    <Button variant="secondary" onClick={handleCloseModal}>Close</Button>
+    <Button variant="danger" onClick={handleCloseModal} className='px-4'>Close</Button>
     <Button variant="success" onClick={handleAddToCart}>Add to Cart</Button>
   </Modal.Footer>
 </Modal>
