@@ -2,30 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import { NavDropdown, Navbar, Button ,Nav, Form, Container} from 'react-bootstrap'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 const GuestNavbar = () => {
+  const navigate = useNavigate()
+  const navigateToCart = ()=> {
+navigate('/cart')
+  }
   return (
     <div>
-     <Navbar bg='dark' style={{color:'#fff', height:'48px'}} className='px-3 px-lg-5 mb-3 d-flex justify-content-between align-items-center' >
-        <div className='d-none d-lg-flex'></div>
-        
-            <p style={{marginTop:'10px'}}>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! &nbsp; <a href='#' style={{fontWeight:'600', color:'#fff'}}>Shop Now</a></p>
-
-            
-            <NavDropdown title="English" id="basic-nav-dropdown" className='me-md-5 me-2 pe-lg-5' style={{fontSize:'14px'}}>
-              <NavDropdown.Item href="#action/3.1">French</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Spanish
-              </NavDropdown.Item>
-             
-            </NavDropdown>
-
-            
-       
-      
-        
-     </Navbar>
+    
      <Navbar expand="lg" variant="light" bg="white" className='py-4 px-3 px-lg-5 ' style={{borderBottom:'1px solid #dfdcdc'}}>
  
       <Navbar.Brand className='ms-3 ms-xl-5'>
@@ -42,13 +28,14 @@ const GuestNavbar = () => {
         <Nav.Link className='nav-link' >Signup</Nav.Link>
           
         </Nav>
-        <Nav className='gap-4 align-items-center me-3 me-xl-5'>
-            <div className='px-2 d-flex align-items-center' style={{backgroundColor: '#F5F5F5'}}>
-                <Form.Control style={{border:'none', backgroundColor: '#F5F5F5'}} placeholder='What are you looking for'/>
+        <Nav className='gap-4 me-3 me-xl-5 mt-3 mt-lg-0'>
+            <div className='px-2 d-flex align-items-center order-3 order-lg-1 ' style={{backgroundColor: '#F5F5F5'}}>
+                <Form.Control style={{border:'none', backgroundColor: '#F5F5F5'}} placeholder='What are you looking for' className=''/>
                 <i className="bi bi-search"></i>
             </div>
-            <i className="bi bi-heart"></i>
-            <i className="bi bi-cart3"></i>
+
+            <div className='my-auto order-2 order-lg-2'> <i className="bi bi-heart"></i></div>
+            <div className='my-auto order-1 order-lg-3'><i className="bi bi-cart3" onClick={navigateToCart}></i></div>
          
         </Nav>
       </Navbar.Collapse>

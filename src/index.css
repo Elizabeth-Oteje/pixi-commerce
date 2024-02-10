@@ -49,7 +49,7 @@ h3 {
 h4 {
   font-size: 20px !important;
   font-family: 'Poppins' !important;
-  font-weight: 600;
+  font-weight: 500 !important;
 }
 
 
@@ -57,14 +57,21 @@ h4 {
 h5 {
   font-size: 17px !important;
   font-family: 'Poppins' !important;
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 
 h6 {
   font-size: 16px !important;
   font-family: 'Poppins' !important;
-  font-weight: 500;
+  font-weight: 400 !important;
+  
+}
+
+.card-text {
+  font-size: 16px !important;
+  font-family: 'Poppins' !important;
+  font-weight: 500 !important;
   
 }
 
@@ -72,7 +79,7 @@ h6 {
 p {
   font-size: 14px !important;
   font-family: 'Poppins' !important;
-  font-weight: 500;
+  font-weight: 400 ;
 }
 
 .nav-link{
@@ -90,7 +97,14 @@ input::placeholder {
 
 }
 
-.custom-carousel .carousel-indicators .active {
+.product-card .card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.product-card .card:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
+}
+.custom-carousel .carousel-indicators .active, .product-carousel .carousel-indicators .active{
   background-color: #EC2C5C !important; 
 }
 .custom-carousel .carousel-control-prev ,
@@ -98,6 +112,14 @@ input::placeholder {
   display: none;
 }
 
+.product-carousel .carousel-control-prev {
+  position: absolute;
+  left: -5%;
+}
+.product-carousel .carousel-control-next {
+  position: absolute;
+  right: -5%;
+}
 .image-glow {
   filter: drop-shadow(0 0 10px white);
 }
@@ -149,20 +171,21 @@ input::placeholder {
    
   }
   h4 {
-    font-size: 18px !important;
-  }
-  h5 {
     font-size: 16px !important;
   }
-  h6 {
-    font-size: 14px !important;
+  h5 {
+    font-size: 15px !important;
+  }
+  h6, .card-text {
+    font-size: 13px !important;
   }
   p {
-    font-size: 12px !important;
+    font-size: 11.5px !important;
   }
   .timer{
     width: 50px;
     height: 50px;
+  
   }
   
 }
