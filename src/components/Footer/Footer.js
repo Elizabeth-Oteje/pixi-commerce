@@ -9,7 +9,8 @@ import social from '../../assets/social-icons.png'
 
 const Footer = () => {
   return (
-    <div className='py-4 py-md-5 px-4 px-md-4 px-lg-5 text-white ' style={{backgroundColor:'#000000'}}>
+    <div style={{backgroundColor:'#000000'}}>
+    <div className='py-4 py-md-5 px-4 px-md-4 px-lg-5 text-white ' >
         <Row className='mx-xl-4'>
             <Col className='d-flex flex-column gap-3 mb-4 '>
                 <h3>Exclusive</h3>
@@ -60,6 +61,11 @@ const Footer = () => {
                 </div>
             </Col>
         </Row>
+        </div>
+        <div style={{borderBottom:'0.5px solid #dfdcdc', opacity:'20%'}}></div>
+        <div className='d-flex p-2 justify-content-center'>
+            <p style={{color:'#FFFFFF', opacity:'20%'}}> &copy; Copyright Rimel 2022. All right reserved</p>
+        </div>
     </div>
   )
 }

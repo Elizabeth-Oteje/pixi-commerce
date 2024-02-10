@@ -64,7 +64,7 @@ h5 {
 h6 {
   font-size: 16px !important;
   font-family: 'Poppins' !important;
-  font-weight: 400 !important;
+  font-weight: 400 ;
   
 }
 
@@ -109,6 +109,18 @@ input::placeholder {
 }
 .custom-carousel .carousel-indicators .active, .product-carousel .carousel-indicators .active{
   background-color: #EC2C5C !important; 
+  border-radius: 50% !important;
+  width:10px !important;
+  height: 10px !important;
+  margin-top: 50px !important;
+}
+
+
+.carousel .carousel-indicators button  {
+  border-radius: 50% !important;
+  width:10px !important;
+  height: 10px !important;
+  margin-top: 50px !important;
 }
 .custom-carousel .carousel-control-prev ,
 .custom-carousel .carousel-control-next {
@@ -124,8 +136,15 @@ input::placeholder {
   right: -5%;
 }
 .image-glow {
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(2px 10px 10px white);
+  opacity: 50%;
 }
+
+
+
+
+
+
 
 
 .active-jobs-button{
