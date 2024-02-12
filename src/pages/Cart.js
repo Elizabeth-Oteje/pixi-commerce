@@ -52,7 +52,7 @@ const handleShowModal = (product) => {
     setQuantity(prevQuantity => Math.max(1, prevQuantity - 1)); // Prevents quantity from going below 1
   };
   const handleAddToCart = () => {
-    window.location.reload();
+   
     addToCart(selectedProduct, quantity);
     handleCloseModal(); // Close the modal after adding to cart
    
@@ -306,7 +306,7 @@ const Cart = () => {
       
      
         </div>
-        <section className='mt-5 pt-3 py-5 px-3 px-md-5' style={{backgroundColor:'#fcfcfc'}}>
+        <section className='mt-3 mt-md-5 pt-3 py-5 px-3 px-md-5' style={{backgroundColor:'#fcfcfc'}}>
             <OptionsYouMightLike/>
        </section>
         <Footer/>

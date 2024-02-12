@@ -139,7 +139,7 @@ const Checkout = () => {
      <div className=''>
      <section className='px-3 px-lg-5' style={{backgroundColor:'#FCFCFC'}}>
         <div className='px-lg-5 ' >
-            <div className='mx-xl-5 mt-3 bg-white mt-5'>
+            <div className='mx-xl-5 mt-3 bg-white mt-lg-5'>
             <Row className='px-2 px-md-2 px-lg-4 py-3'>
                 <Col xs={6} md={3} className='justify-content-start'>
                 <div className={selectedButton === 0 ? 'active-itinerary' : 'itinerary-text'} onClick={() => handleButtonClick(0)}>
@@ -460,7 +460,7 @@ const Checkout = () => {
             </div>
             </div >
             <div className='mx-lg-5 px-lg-5 my-5'>
-            <div style={{maxWidth:'35rem'}} className='mx-5'>
+            <div style={{maxWidth:'35rem'}} className='mx-md-5'>
             <div style={{backgroundColor:'#F9F9F9', fontWeight:'500'}} className='p-3'>
 
         <p className='mb-3' >Order Details</p>
@@ -474,7 +474,7 @@ const Checkout = () => {
             </div>
 
     </div>
-    <div className='d-flex justify-content-between mt-5' style={{color:'#394357'}}>
+    <div className='d-block d-md-flex justify-content-between mt-3 mt-lg-5' style={{color:'#394357'}}>
         <p><i className="bi bi-share"></i> &nbsp; Share with friends</p>
         <p><FontAwesomeIcon icon={faRoute}/> &nbsp; Track Order</p>
         <p><i className="bi bi-camera"></i> &nbsp; Take a screenshot</p>
@@ -507,7 +507,7 @@ const Checkout = () => {
 
           
             {selectedButton === 3 && (
-                <section className='pt-5 pb-5 px-3 px-xl-5' >
+                <section className=' pt-3 pt-md-5 pb-5 px-3 px-xl-5' >
                      <OptionsYouMightLike/>
                 </section>
                
@@ -519,9 +519,9 @@ const Checkout = () => {
      
      </section>
      {selectedButton === 2 && (
-            <div className='px-5 pb-5' style={{backgroundColor:'#F2F5F8', top:"",}}>
-                <div className='px-5 ' style={{backgroundColor:'#F2F5F8', top:"",}}>
-                <div className='px-5 pb-5' style={{backgroundColor:'#F2F5F8', top:"",}}>
+            <div className='px-md-5 pb-3 pb-md-5' style={{backgroundColor:'#F2F5F8', top:"",}}>
+                <div className='px-1 px-md-5 ' style={{backgroundColor:'#F2F5F8', top:"",}}>
+                <div className='px-2 px-md-5 pb-5' style={{backgroundColor:'#F2F5F8', top:"",}}>
                 <div className='px-5 py-3' style={{backgroundColor:'white'}}></div>
                 <div className='px-5 py-4' style={{backgroundColor:'white'}}></div>
                 </div>

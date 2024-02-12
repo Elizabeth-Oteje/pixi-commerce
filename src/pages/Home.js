@@ -222,7 +222,7 @@ const handleShowModal = (product) => {
             <div className='my-5'>
                 <Row>
                     {products.map((product) => (
-                        <Col xs={6} lg={3} key={product.id} className='mb-5'>
+                        <Col xs={6} lg={3} key={product.id} className='mb-3 mb-md-5'>
                             <Card className='border-0 product-card' onClick={() => handleShowModal(product)}>
              
                             <Card className='d-flex align-items-center text-center justify-content-center p-4 position-relative' style={{backgroundColor:'#F5F5F5', border:'none'}}>
@@ -280,11 +280,11 @@ const handleShowModal = (product) => {
           </Col>
                     ))}
                 </Row>
-                <div className='text-center mt-4 mb-5 pb-lg-5'>
+                <div className='text-center mt-4 mb-5 pb-2 pb-lg-5'>
                 <Button
       variant='danger'
-      className='py-2'
-      style={{ width: '30%' }}
+      className='py-2 px-4'
+      
       onClick={handleClick}
       disabled={isLoading}
     >
@@ -309,7 +309,7 @@ const handleShowModal = (product) => {
             
            
         </section>
-        <section className='my-5 pt-lg-5'>
+        <section className='my-5 pt-5'>
             <div className='d-block d-sm-flex gap-5 justify-content-center'>
                 <div className='align-items-center text-align-center text-center mb-4'>
                     <img src={car} alt='delivery'/>

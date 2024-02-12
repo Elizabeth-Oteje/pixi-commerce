@@ -21,7 +21,7 @@ navigate('/cart')
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarSupportedContent" />
       <Navbar.Collapse id="navbarSupportedContent" >
-        <Nav className="mx-auto gap-4 gap-md-3">
+        <Nav className="mx-auto gap-2 gap-md-3">
         <NavLink activeclassname='active' className='nav-link' to="/">Home</NavLink>
         <Nav.Link className='nav-link' >Contact</Nav.Link>
         <Nav.Link className='nav-link' >About</Nav.Link>
